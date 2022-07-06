@@ -1,0 +1,34 @@
+{
+    "name": "phalconer/fladmin-addons",
+    "description": "addons package for fladmin",
+    "homepage": "https://github.com/phalconer/fladmin-addons.git",
+    "license": "Apache-2.0",
+    "version": "1.3.3",
+    "authors": [
+        {
+            "name": "jack",
+            "email": "1276789849@qq.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/phalconer/fladmin-addons"
+    },
+    "require": {
+        "php": ">=7.0.0",
+        "nelexa/zip": "^3.3",
+        "symfony/var-exporter": "^4.4.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "think\\": "src/"
+        },
+        "files": [
+            "src/common.php"
+        ]
+    },
+    "extra": {
+        "think-config": {
+            "addons": "src/config.php"
+        }
+    }
+}
